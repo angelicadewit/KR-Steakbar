@@ -1,0 +1,57 @@
+
+
+$tablet-breakpoint: 640px;
+$desktop-breakpoint: 1027px;
+$edge-breakpoint: 1440px;
+$url-font: "nimbus-sans";
+$heading-font: "Michroma";
+$copy-font: "spectral";
+
+
+$home-bg-color: #eae6df;
+$home-copy-color: #9e8261;
+$home-accent-color: #eba900;
+$white-accent-color: #fffbfb;
+
+$food-background-color: #07263a;
+$food-text-color: #83a0b0;
+$food-main-links: #f9a68a;
+
+$bureau-background-color: #a13612;
+$bureau-text-color: #fb9d52;
+$bureau-main-links: #8bbfc1;
+
+$bar-background-color: #806875;
+$bar-text-color: #fad5e9;
+$bar-main-links: #e2ae1e;
+
+$table-background-color: #4b5b42;
+$table-text-color: #a4c48f;
+$table-main-links: #f58319;
+
+$location-background-color: #ffffff;
+$location-text-color: #494949;
+$location-main-links: #4c5ec0;
+
+$hours-background-color: #3f3f3f;
+$hours-text-color: #b4b4b4;
+$hours-main-links: #ddb67a;
+
+
+@mixin tablet {
+	@media only screen and (min-width: $tablet-breakpoint){
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (min-width: $desktop-breakpoint){
+		@content;
+	}
+}
+
+@mixin bigger-desktop {
+	@media only screen and (min-width: $edge-breakpoint){
+		@content;
+	}
+}

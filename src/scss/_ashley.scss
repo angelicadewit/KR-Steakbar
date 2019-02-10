@@ -1,0 +1,230 @@
+
+@import 'variables';
+
+
+
+svg {
+	overflow: visible;
+	// z-index: 9999;
+}
+
+.circle {
+	pointer-events: none;
+	z-index: -99;
+
+	path {
+		fill: none;
+		stroke: $white-accent-color;
+		stroke-width: 1;
+
+		.food & {
+			stroke: $food-main-links;
+		}
+
+		.bureau & {
+			stroke: $bureau-main-links;
+		}
+
+		.bar & {
+			stroke: $bar-main-links;
+		}
+
+		.table & {
+			stroke: $table-main-links;
+		}
+
+		.location & {
+			stroke: $location-main-links;
+		}
+
+		.hours & {
+			stroke: $hours-main-links;
+		}
+	}
+
+	&.is-active {
+		z-index: 8;
+
+		path {
+			stroke: $home-copy-color;
+
+			.food & {
+				stroke: $food-main-links;
+			}
+
+			.bureau & {
+				stroke: $bureau-main-links;
+			}
+
+			.bar & {
+				stroke: $bar-main-links;
+			}
+
+			.table & {
+				stroke: $table-main-links;
+			}
+
+			.location & {
+				stroke: $location-main-links;
+			}
+
+			.hours & {
+				stroke: $hours-main-links;
+			}
+		}
+
+		@include tablet {
+			z-index: -99;
+
+			path {
+				stroke: $white-accent-color;
+			}
+		}
+	}
+}
+
+.circle-l {
+	width: 48%;
+	height: 440px;
+	position: absolute;
+	top: 3%;
+	right: 9%;
+
+	path.circle-l-path {
+
+		&.circle-l2, &.circle-l3, &.circle-l4, &.circle-l5 {
+			visibility: hidden;
+		}
+	}
+}
+
+.circle-m {
+	width: 25%;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	right: 65%;
+
+	path.circle-m-path {
+
+		&.circle-m2, &.circle-m3, &.circle-m4, &.circle-m5 {
+			visibility: hidden;
+		}
+	}
+}
+
+.circle-sm {
+	width: 14%;
+	height: 230px;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+
+	path.circle-sm-path {
+
+		&.circle-sm2, &.circle-sm3, &.circle-sm4, &.circle-sm5 {
+			visibility: hidden;
+		}
+	}
+}
+
+.hamburger-menu {
+
+	svg {
+		position: absolute;
+		width: 69px;
+		height: 64px;
+		transition: 1s;
+	}
+
+	path.menu-circle {
+		fill: $home-accent-color;
+		z-index: -1;
+
+		.food & {
+			fill: $food-text-color;
+		}
+
+		.bureau & {
+			fill: $bureau-text-color;
+		}
+
+		.bar & {
+			fill: $bar-text-color;
+		}
+
+		.table & {
+			fill: $table-text-color;
+		}
+
+		.location & {
+			fill: $location-text-color;
+		}
+
+		.hours & {
+			fill: $hours-text-color;
+		}
+	}
+}
+
+nav {
+
+	svg {
+		width: 66px;
+		height: 69px;
+		align-self: center;
+		margin: 35px 44px;
+		cursor: pointer;
+		z-index: 1;
+	}
+}
+
+
+
+
+@keyframes ani-bounce {
+	0% { transform: scale(1); transform-origin: center; }
+	75% { transform: scale(1.3); transform-origin: center; }
+	80% { transform: scale(1); transform-origin: center; }
+	95% { transform: scale(1.2); transform-origin: center; }
+	100% { transform: scale(1); transform-origin: center; }
+}
+
+@keyframes ani-slide {
+	0% { transform: translateX(32px); }
+	50% { opacity: 0; }
+	100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes ani-fade {
+	100% { opacity: 1; }
+}
+
+@keyframes ani-fade-in {
+    0% {transform: translateY(20px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes ani-fade-in-res {
+    0% {transform: rotate(-90deg) translateX(-20px); opacity: 0;}
+    100% {transform: rotate(-90deg) translateX(0px); opacity: 1;}
+}
+
+@keyframes ani-fade-down {
+    0% {transform: translateY(-50px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes ani-across {
+    0% {transform: translateX(-20px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
