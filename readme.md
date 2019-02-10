@@ -9,3 +9,7 @@ Design features responsive one page website of KR Steakbar, a high end popular r
 * [GSAP MorphSVG](https://greensock.com/morphSVG)
 * [GSAP DrawSVG](https://greensock.com/drawSVG/)
 * Vanilla JS
+
+## View the site
+
+[Live Site](http://angelicadewit.com/kr-steakbar)
