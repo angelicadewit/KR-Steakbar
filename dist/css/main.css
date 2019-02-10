@@ -323,7 +323,8 @@ nav svg {
 
 body {
 	background: #eae6df;
-	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 	min-height: 100vh;
 	transition: background 0.3s;
 }
