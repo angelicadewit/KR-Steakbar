@@ -67,7 +67,7 @@ for (var i = 0; i < iconPaths.length; i++) {
 
 
 
-
+//TODO delete unused code
 //svgs
 
 

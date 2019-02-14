@@ -449,33 +449,47 @@ footer {
 	}
 }
 
-.phone-number, .reservations, .kr-footer {
+.phone-number,
+.reservations,
+.kr-footer {
 	font-size: 1.2em;
 	animation: ani-fade-in 2s forwards;
 	animation-delay: 0.3s;
 }
 
-.food .phone-number, .food .reservations, .food .kr-footer {
+.food .phone-number, .food
+.reservations, .food
+.kr-footer {
 	color: #83a0b0;
 }
 
-.bureau .phone-number, .bureau .reservations, .bureau .kr-footer {
+.bureau .phone-number, .bureau
+.reservations, .bureau
+.kr-footer {
 	color: #fb9d52;
 }
 
-.bar .phone-number, .bar .reservations, .bar .kr-footer {
+.bar .phone-number, .bar
+.reservations, .bar
+.kr-footer {
 	color: #fad5e9;
 }
 
-.table .phone-number, .table .reservations, .table .kr-footer {
+.table .phone-number, .table
+.reservations, .table
+.kr-footer {
 	color: #a4c48f;
 }
 
-.location .phone-number, .location .reservations, .location .kr-footer {
+.location .phone-number, .location
+.reservations, .location
+.kr-footer {
 	color: #494949;
 }
 
-.hours .phone-number, .hours .reservations, .hours .kr-footer {
+.hours .phone-number, .hours
+.reservations, .hours
+.kr-footer {
 	color: #b4b4b4;
 }
 

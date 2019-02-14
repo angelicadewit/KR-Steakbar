@@ -1,5 +1,6 @@
 'use strict';
 
+// TODO rename file or merge into main    
 var mql = window.matchMedia('(max-width: 640px)');
 
 var h2s = document.querySelectorAll('.main-content h2');

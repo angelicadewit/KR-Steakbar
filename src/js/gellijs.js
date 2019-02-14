@@ -1,4 +1,4 @@
-    
+// TODO rename file or merge into main    
 const mql = window.matchMedia(`(max-width: 640px)`);
 
 const h2s = document.querySelectorAll(`.main-content h2`)

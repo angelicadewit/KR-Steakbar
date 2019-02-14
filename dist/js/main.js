@@ -63,6 +63,7 @@ for (var i = 0; i < iconPaths.length; i++) {
 	tlIcons.from(iconPaths[i], 0.5, { drawSVG: "50% 50%", delay: 1 });
 }
 
+//TODO delete unused code
 //svgs
 
 

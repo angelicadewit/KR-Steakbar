@@ -17,8 +17,8 @@ TABLE OF CONTENTS:
 @import 'reset';
 @import url('https://fonts.googleapis.com/css?family=Michroma|Spectral');
 @import url("https://use.typekit.net/cco7rbw.css");
-@import 'ashley';
 @import 'variables';
+@import 'ashley'; // TODO: rename
 
 
 /* 1. Main Layout ================================= */
@@ -156,7 +156,9 @@ footer {
 	}
 }
 
-.phone-number, .reservations, .kr-footer {
+.phone-number, 
+.reservations, 
+.kr-footer {
 	font-size: 1.2em;
 	animation: ani-fade-in 2s forwards;
 	animation-delay: 0.3s;
